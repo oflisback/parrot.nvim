@@ -34,7 +34,7 @@ function M.check()
     end
   end
 
-  for _, name in ipairs({ "curl", "rg", "ln" }) do
+  for _, name in ipairs({ "curl", "rg" }) do
     if vim.fn.executable(name) == 1 then
       vim.health.ok(("`%s` is installed"):format(name))
     else
